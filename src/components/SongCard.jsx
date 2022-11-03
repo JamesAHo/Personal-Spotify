@@ -1,5 +1,5 @@
 import {Link } from 'react-router-dom';
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import PlayPause from './PlayPause';
 import { playPause , setActiveSong} from '../redux/features/playerSlice';
 
@@ -29,7 +29,7 @@ const SongCard = ({song, isPlaying, activeSong, i, data}) => {
           activeSong={activeSong}
           song={song}
           handlePause={handlePauseClick}
-          handlePlayClick={handlePlayClick}
+          handlePlay={handlePlayClick}
          />
         </div>
         <img alt="song_img" src={song.images?.coverart} className="w-full h-full rounded-lg" />

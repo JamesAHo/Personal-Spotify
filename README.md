@@ -1,4 +1,4 @@
-# Project Lyrics
+# Personal-Spotify
 
 Develop an elegant React.js Music Application. 
 

@@ -17,7 +17,7 @@ const Discover = () => {
     if(isFetching) return <Loader title="Loading Song..." />
     if(error) return <Error />;
     // console.log(genres) to see data
-    const genreTitle = "POP"
+    const genreTitle = "Pop"
     return (
         // tailwin css that have flex flex-col
     <div className="flex flex-col">
