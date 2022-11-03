@@ -4,13 +4,13 @@ import PlayPause from './PlayPause';
 import { playPause , setActiveSong} from '../redux/features/playerSlice';
 
 
-
+// get props from Discover
 const SongCard = ({song, isPlaying, activeSong, i, data}) => {
-
+  // CAKE -> SELECTOR (PIECES)
 
   // console.log(song)
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const handlePauseClick = () => {
     dispatch(playPause(false))
   };

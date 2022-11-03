@@ -11,6 +11,8 @@ import { useGetTopChartsQuery } from '../redux/services/shazamCore'
 const Discover = () => {
     //use useDispatch
     const dispatch = useDispatch();
+    // Aplly Redux here
+    // Passing CAKE slices = state
     const { activeSong, isPlaying} = useSelector((state) => state.player)
     // redux hook
     const {data, isFetching, error} = useGetTopChartsQuery();
@@ -19,7 +21,7 @@ const Discover = () => {
     // console.log(genres) to see data
     const genreTitle = "Pop"
     return (
-        // tailwin css that have flex flex-col
+        // tailwincss that have flex flex-col
     <div className="flex flex-col">
         <div className='w-full flex justify-between items-center sm:flex-row flex-col mt-4 mb-10'>
             <h2 className='font-bold text-3xl text-white text-left'>Category {genreTitle}</h2>
