@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+// Initial state of overall song operations
 const initialState = {
   currentSongs: [],
   currentIndex: 0,
