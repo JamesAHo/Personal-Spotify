@@ -3,7 +3,7 @@ import { useSelector} from "react-redux";
 import { DetailsHeader, Error, Loader, RelatedSongs } from "../components";
 import { useGetArtistDetailsQuery} from "../redux/services/shazamCore";
 const ArtistDetails = () => {
-    const dispatch = useDispatch();
+    
     const {songid, id: artistId} = useParams();
     const {activeSong, isPlaying} = useSelector((state) => state.player)
     //
