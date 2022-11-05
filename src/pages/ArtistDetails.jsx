@@ -10,7 +10,7 @@ const ArtistDetails = () => {
     const {activeSong, isPlaying} = useSelector((state) => state.player)
    
     
-    const {data: artistData, isFetching: isFetchingArtistDetails, error} =  useGetArtistDetailsQuery((artistId))
+    const {data: artistData, isFetching: isFetchingArtistDetails, error} =  useGetArtistDetailsQuery(artistId);
   
     // Loading Error component while fetching
     if(isFetchingArtistDetails) return <Loader title="Looking.." />
@@ -30,12 +30,12 @@ const ArtistDetails = () => {
             activeSong={activeSong}
             />
         </div>
-    )
+    );
 
 
 
 
-}
+};
 
 export default ArtistDetails;
 

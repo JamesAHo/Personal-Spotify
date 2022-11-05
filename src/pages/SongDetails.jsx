@@ -44,11 +44,12 @@ const SongDetails = () => {
                 <div className="mt-5 ">
                     {songData?.sections[1].type === "LYRICS" ? songData?.sections[1].text.map((Line, i) => (
                         <p className="text-white text-base my-1">{Line}</p>
-                    )) : <p>Sorry, Lyric not found!</p> }
+                    )) : (<p>Sorry, Lyric not found!</p>) }
                 </div>
             </div>
             <RelatedSongs
             data={data}
+            artistId={artistId}
             isPlaying={isPlaying}
             activeSong={activeSong}
             handlePauseClick={handlePauseClick}
@@ -56,10 +57,6 @@ const SongDetails = () => {
             />
         </div>
     )
-
-
-
-
 }
 
 export default SongDetails;
