@@ -17,9 +17,20 @@ const SongDetails = () => {
     // related Song 
     const {data, isFetching: isFetchingRelatedSongs, error} = useGetSongsRelatedQuery({songid});
     console.log(songData)
+    // Handle Pause
+    const handlePauseClick = () => {
+        dispatch(playPause(false))
+      };
+      // play Handle
+      const handlePlayClick = (song, i) => {
+        dispatch(setActiveSong({song,data,i}));
+        dispatch(playPause(true));
+      };
+    
     // Loading Error component while fetching
     if(isFetchingSongDetails || isFetchingRelatedSongs) return <Loader />
-    
+    // handle error
+    if(error) return <Error />
     return (
         <div className="flex flex-col ">
             <DetailsHeader 
@@ -36,6 +47,13 @@ const SongDetails = () => {
                     )) : <p>Sorry, Lyric not found!</p> }
                 </div>
             </div>
+            <RelatedSongs
+            data={data}
+            isPlaying={isPlaying}
+            activeSong={activeSong}
+            handlePauseClick={handlePauseClick}
+            handlePlayClick={handlePlayClick}
+            />
         </div>
     )
 
