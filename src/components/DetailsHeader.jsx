@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import RelatedSongs from "./RelatedSongs";
 
 
 const DetailsHeader = ({ artistId, artistData, songData}) => {
@@ -27,6 +28,8 @@ const DetailsHeader = ({ artistId, artistData, songData}) => {
               </p>
           </div>
     </div>
+    <div className="w-full sm:h-44 h-24" />
+    <RelatedSongs />
   </div>
   )}
 
