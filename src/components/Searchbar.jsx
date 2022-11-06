@@ -17,7 +17,9 @@ const Searchbar = () => (
          placeholder="Search"
          type="search"
          value=""
-         onChange={() => {}}
+         onChange={() => {}} 
+         className="flex-1 bg-transparent border-none online-none
+         placeholder-gray-500 text-base text-white p-4 "
         
           />
     </div>
