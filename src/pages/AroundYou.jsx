@@ -22,6 +22,8 @@ const AroundYou = () => {
         .finally(() => setLoading(false));
 
     },[country])
+    // apply loader components
+    if(isFetching && loading) return <Loader title="Loading..." />
     return (
         <div>
 
