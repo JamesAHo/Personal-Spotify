@@ -27,7 +27,8 @@ const Sidebar = () => {
   return (
     <>
       <div className="md:flex hidden flex-col w-[240px] py-10 px-4 bg-[#191624]">
-        <img src={logo} alt="logo" className="w-full h-14 object-contain" />
+        <h1 className="text-white font-sans flex justify-center text-3xl  ">JamesDev</h1>
+        {/* <img src={logo} alt="logo" className="w-full h-14 object-contain" /> */}
         {<NavLinks />}
       </div>
       {/* Start a new div here, if Mobile activate render Ricloseline otherwise HiOutlineMenu */}

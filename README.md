@@ -1,5 +1,6 @@
 # Personal Music App
 
+
 ## Description
 
 Music is essential, I always want to keep up with the most recent album drops from my favorite artists. The best way to do this is to 
