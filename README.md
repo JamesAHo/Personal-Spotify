@@ -15,5 +15,15 @@ create a website that have all of the features I need. I have created this websi
 3. Libaries:
    - Tailwindcss
    - Redux toolkit 
+
 ## Funtionalities
-   - 
+   - Able to search and discover music genres.
+   - Able to find lyrics for a particular songs.
+   - Look up to any artists using search bar.
+   - Listen to music by a single click.
+
+## Installation
+   - fork project and install all dependencies.
+   - Run `npm run dev` to start application.
+
+
