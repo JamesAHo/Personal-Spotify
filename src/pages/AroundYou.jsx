@@ -24,9 +24,13 @@ const AroundYou = () => {
     },[country])
     // apply loader components
     if(isFetching && loading) return <Loader title="Loading..." />
-    return (
-        <div>
 
+    // handle error if data is not available
+    if(error && country) return <Error />;
+
+    return (
+        <div className='flex flex-col '>
+            <h2 className='font-bold text-3xl text-white text-left mt-4 mb-10'>Around You</h2>
         </div>
     )
 }
