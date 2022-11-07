@@ -1,5 +1,6 @@
 # Personal Music App
 
+![Peronsal Spotify](/MusicApp.png)
 
 ## Description
 
