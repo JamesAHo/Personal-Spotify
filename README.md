@@ -5,7 +5,7 @@
 ## Description
 
 Music is essential, I always want to keep up with the most recent album drops from my favorite artists. The best way to do this is to 
-create a website that have all of the features I need. I have created this website as a simple day to day use to listen and explore different kind of music genres. Please visit this [**link**](https://personal-spotify.netlify.app/)
+create a website that have all of the features I need. I have created this website as a simple day to day use to listen and explore different kind of music genres. Please visit this [link](https://personal-spotify.netlify.app/) for the demo
 
 ## Technologies
 
